@@ -1,0 +1,12 @@
+<div
+  (mouseenter)="showCard = true"
+  (mouseleave)="showCard = false"
+  class="card"
+>
+  <img [src]="card.image" alt="" />
+  <p>{{ card.title }}</p>
+  <p>Price: {{ card.price }}</p>
+  <div *ngIf="showCard" class="card-agree">
+    <button (click)="clickCard()" >Agregar</button>
+  </div>
+</div>

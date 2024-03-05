@@ -1,0 +1,32 @@
+.container {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f0d287;
+    padding: 1em;
+    h1 {
+      cursor: pointer;
+    }
+    .cart {
+      position: relative;
+      cursor: pointer;
+      .material-icons {
+        font-size: 2em;
+        margin-left: -2em;
+      }
+  
+      &__count {
+        position: absolute;
+        background: rgb(30, 5, 255);
+        color: white;
+        padding: 5px;
+        border-radius: 50%;
+        font-weight: bold;
+        top: -11px;
+        left: -45px;
+        width: 15px;
+        text-align: center;
+      }
+    }
+  }
